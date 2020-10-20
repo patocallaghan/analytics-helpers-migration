@@ -1,0 +1,46 @@
+<a
+  {{on "click"
+  	(track-analytics-event
+    	action="filter_toggled"
+        object="answers"
+        context="answers_index"
+        filter_value=item.status
+     )
+  }}
+>
+  Click me
+</a>
+
+<SomeComponent @onClick={{track-analytics-event
+    	action="filter_toggled"
+        object="answers"
+        context="answers_index"
+        filter_value=item.status}} />
+
+<a
+  {{on "click"
+  	(track-analytics-event
+    	action="filter_toggled"
+        object="answers"
+        context="answers-index"
+        filter_value=item.status
+     )
+  }}
+>
+  Click me
+</a>
+
+<a
+  {{on "click"
+  	(track-analytics-event
+    	action="filter_toggled"
+        object="answers"
+        context="answersIndex"
+        filter_value=item.status
+     )
+  }}
+>
+  Click me
+</a>
+
+<div data-track-analytics-event-object="intercom_home_logo" test={{test}}></div>
