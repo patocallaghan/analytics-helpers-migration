@@ -30,6 +30,7 @@ module.exports = function transformer(file, api) {
         if (firstArg.type === 'ObjectExpression') {
           firstArg.properties.forEach((prop) => {
             if (
+              prop.value &&
               prop.value.type === 'StringLiteral' &&
               ['action', 'object'].includes(prop.key.name)
             ) {
