@@ -24,6 +24,8 @@ node ./bin/cli.js <TRANSFORM NAME> path/of/files/ or/some**/*glob.js
 ## Transforms
 
 <!--TRANSFORMS_START-->
+* [track-analytics-event-hbs](transforms/track-analytics-event-hbs/README.md)
+* [track-analytics-event-js](transforms/track-analytics-event-js/README.md)
 <!--TRANSFORMS_END-->
 
 ## Contributing
